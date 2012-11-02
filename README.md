@@ -1,4 +1,4 @@
 gearman_c_demo
 ==============
 
-A Gearman Demo in C 
+This is an example of building a Gearman Worker in C. There is a lack of documentation on the Gearman website for this. 
