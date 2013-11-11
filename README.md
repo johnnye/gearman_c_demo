@@ -9,5 +9,7 @@ Is on the TODO list.
 ### Gearman Client 
 There are 3 good examples of how to write a Gearman client at the Gearman documentation site. http://gearman.info/libgearman/examples.html. Use those. 
 
-Compilation:gcc -I/usr/local -L/usr/local/libgearman/lib cworker.c -lgearman
-
+Compilation:
+````shell
+gcc -I/usr/local -L/usr/local/libgearman/lib cworker.c -lgearman
+````
