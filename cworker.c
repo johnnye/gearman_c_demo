@@ -29,9 +29,9 @@ void *doing_work(gearman_job_st *job, void *context, size_t *result_size, gearma
     workloadsize = gearman_job_workload_size(job); //how big is the workload?
 
 	//Copy the workload into a usable string
-    char workload[workloadsize+2];
+    char workload[workloadsize];
     strncpy(workload, (const char*)gearman_job_workload(job), workloadsize);
-
+    workload[workloadsize] = '\0';
 	//Do your work here
     puts(workload);
 
